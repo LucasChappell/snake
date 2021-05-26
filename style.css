@@ -1,0 +1,37 @@
+.snake{
+    position: absolute;
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    left: 0px;
+}
+.apple{
+    position: absolute;
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    top: -50px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: red;
+    border-width: 0px;
+    animation-name: dropAnimation;
+    animation-duration: 5s;
+}
+@keyframes dropAnimation{
+    0% {top: -30px;}
+    100%{top: 1500px;}
+}
+#container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    min-height: 980px;
+    width: 1920px;
+    border-style: solid;
+}
+body {
+    overflow: hidden;
+}
